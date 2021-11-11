@@ -1,0 +1,25 @@
+.restaurants{
+
+  background-color:$Color__Background;
+
+  margin-top:15px;
+  padding-top:30px;
+
+  &__title{
+    margin-block-start:2%;
+    margin-block-end:3%;
+    height:7%;
+    font-family:$Police__Secondary;
+    padding-inline-start:2%;
+    font-size:3.5em
+  }
+
+  &__list{
+    height:90%;
+    padding-bottom:1%;
+    padding-inline-end:2%;
+    list-style: none;
+    padding-inline-start:2%;
+    margin-block-end:0;
+  }
+}

@@ -1,0 +1,21 @@
+.icon{
+
+  font-size:1.4em;
+  margin-right:1em;
+  font-weight:bold;
+  color:gray;
+
+  &--footer{
+    color:white;
+    font-size:2em;
+    vertical-align: middle;
+  }
+
+  &--functioning{
+    color:$Color__Primary;
+  }
+
+  &--card{
+    color:linear-gradient($Color__Primary, $Color__Secondary)
+  }
+}

@@ -5,7 +5,7 @@
 		<meta charset="utf-8"/>
 		<title>Ohmyfood - Réservez le menu qui vous convient</title>
 		<script src="https://kit.fontawesome.com/a42d901271.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="./public/css/style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -19,82 +19,80 @@
 			<h1>ohmyfood</h1>
 			<div class="header__bottom">
 				<div id="header__bottom__localisation">
-					<i class="fas fa-map-marker-alt"></i>
+					<i class="header__bottom__icon fas fa-map-marker-alt icon"></i>
 					<p>Paris, Belleville</p>
 				</div>
 				<h2>Réservez le menu qui vous convient</h2>
 				<h4>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h4>
-				<button class="bouton--header">Explorer nos restaurants</button>
+				<button class="button button--highlight">Explorer nos restaurants</button>
 			</div>
 		</header>
 
-		<section>
+		<section class="functioning">
 			<h2>Fonctionnement</h2>
-			<ol class="liste-etapes-fonctionnement">
-				<li class="etape-fonctionnement etape-fonctionnement__1">
-					<p class="etape-fonctionnement_puce puce-etape--1">1</p> <!--A voir si il ne faut pas créer un id pour chaque chiffre avec la largeur du padding spécifique -->
-					<i class="etape-fonctionnement__icone fas fa-mobile-alt icone"></i>
+			<ol class="functioning__list-steps">
+				<li class="step-functioning step-functioning__1">
+					<p class="step-functioning__bullet bullet-step--1">1</p> <!--A voir si il ne faut pas créer un id pour chaque chiffre avec la largeur du padding spécifique -->
+					<i class="step-functioning__icon fas fa-mobile-alt icon icon--functioning"></i>
 					<h3>Choisissez un restaurant</h3>
 				</li>
 
-				<li class="etape-fonctionnement etape-fonctionnement__2">
-					<p class="etape-fonctionnement_puce puce-etape--2">2</p> <!--A voir si il ne faut pas créer un id pour chaque chiffre avec la largeur du padding spécifique -->
-					<i class="etape-fonctionnement__icone fas fa-list-ul icone"></i>
+				<li class="step-functioning step-functioning__2">
+					<p class="step-functioning__bullet bullet-step--2">2</p> <!--A voir si il ne faut pas créer un id pour chaque chiffre avec la largeur du padding spécifique -->
+					<i class="step-functioning__icon fas fa-list-ul icon"></i>
 					<h3>Composez votre menu</h3>
 				</li>
 
-				<li class="etape-fonctionnement etape-fonctionnement__3">
-					<p class="etape-fonctionnement_puce puce-etape--3">3</p> <!--A voir si il ne faut pas créer un id pour chaque chiffre avec la largeur du padding spécifique -->
-					<i class="etape-fonctionnement__icone fas fa-store icone"></i>
+				<li class="step-functioning step-functioning__3">
+					<p class="step-functioning__bullet bullet-step--3">3</p> <!--A voir si il ne faut pas créer un id pour chaque chiffre avec la largeur du padding spécifique -->
+					<i class="step-functioning__icon fas fa-store icon"></i>
 					<h3>Dégustez au restaurant</h3>
 				</li>
 			</ol>
 		</section>
 
-		<section>
-			<h3 class="titre-restaurants"></h3>
-			<ol class="liste-restaurants">
-				<li class="carte-restaurant carte-restaurant__1">
-					<a class="carte-restaurant__image" href="page-menu-1.html"></a>
-					<a class="carte-restaurant__vignette vignette-nouveau-restaurant" href="page-menu-1.html">Nouveau</a>
-					<div class="carte-restaurant__zone-texte">
-						<a class="carte-restaurant__titre" href="page-menu-1.html">La palette du goût</a>
-						<a class="carte-restaurant__sous-titre" href="page-menu-1.html">Ménilmontant</a>
-						<i class="carte-restaurant__icone far fa-heart icone"></i>
-						<i class="carte-restaurant__icone fas fa-heart icone"></i>
+		<section class="restaurants">
+			<h3 class="restaurants__title">Restaurants</h3>
+			<ol class="restaurants__list">
+				<li class="card-restaurant restaurants__list__1">
+					<div class="card-restaurant__image card-restaurant__image__1" href="page-menu-1.html"></div>
+					<a class="card-restaurant__thumbail thumbail-new-restaurant" href="page-menu-1.html">Nouveau</a>
+					<div class="card-restaurant__text-zone">
+						<a class="card-restaurant__text-zone__title" href="page-menu-1.html">La palette du goût</a>
+						<a class="card-restaurant__text-zone__subtitle" href="page-menu-1.html">Ménilmontant</a>
+						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
+						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
 					</div>
 				</li>
 
-				<li class="carte-restaurant carte-restaurant__1">
-					<a class="carte-restaurant__image" href="page-menu-1.html"></a>
-					<a class="carte-restaurant__vignette vignette-nouveau-restaurant" href="page-menu-1.html">Nouveau</a>
-					<div class="carte-restaurant__zone-texte">
-						<a class="carte-restaurant__titre" href="page-menu-1.html">La note enchantée</a>
-						<a class="carte-restaurant__sous-titre" href="page-menu-1.html">Charonne</a>
-						<i class="carte-restaurant__icone far fa-heart icone"></i>
-						<i class="carte-restaurant__icone fas fa-heart icone"></i>
+				<li class="card-restaurant restaurants__list__2">
+					<div class="card-restaurant__image card-restaurant__image__2" href="page-menu-2.html"></div>
+					<a class="card-restaurant__thumbail thumbail-new-restaurant" href="page-menu-2.html">Nouveau</a>
+					<div class="card-restaurant__text-zone">
+						<a class="card-restaurant__text-zone__title" href="page-menu-2.html">La note enchantée</a>
+						<a class="card-restaurant__text-zone__subtitle" href="page-menu-2.html">Charonne</a>
+						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
+						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
 					</div>
 				</li>
 
-				<li class="carte-restaurant carte-restaurant__1">
-					<a class="carte-restaurant__image" href="page-menu-1.html"></a>
-					<a class="carte-restaurant__vignette vignette-nouveau-restaurant" href="page-menu-1.html">Nouveau</a>
-					<div class="carte-restaurant__zone-texte">
-						<a class="carte-restaurant__titre" href="page-menu-1.html">A la française</a>
-						<a class="carte-restaurant__sous-titre" href="page-menu-1.html">Moulin Rouge</a>
-						<i class="carte-restaurant__icone far fa-heart icone"></i>
-						<i class="carte-restaurant__icone fas fa-heart icone"></i>
+				<li class="card-restaurant restaurants__list__3">
+					<div class="card-restaurant__image card-restaurant__image__3" href="page-menu-3.html"></div>
+					<div class="card-restaurant__text-zone">
+						<a class="card-restaurant__text-zone__title" href="page-menu-3.html">A la française</a>
+						<a class="card-restaurant__text-zone__subtitle" href="page-menu-3.html">Moulin Rouge</a>
+						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
+						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon icon--card"></i>
 					</div>
 				</li>
 
-				<li class="carte-restaurant carte-restaurant__1">
-					<a class="carte-restaurant__image" href="page-menu-1.html"></a>
-					<a class="carte-restaurant__vignette vignette-nouveau-restaurant" href="page-menu-1.html">Nouveau</a>
-					<div class="carte-restaurant__zone-texte">
-						<a class="carte-restaurant__titre" href="page-menu-1.html">Le délice des sens</a>
-						<a class="carte-restaurant__sous-titre" href="page-menu-1.html">Folie-Méricourt</a>
-						<i class="carte-restaurant__icone far fa-heart icone"></i>
-						<i class="carte-restaurant__icone fas fa-heart icone"></i>
+				<li class="card-restaurant restaurants__list__4">
+					<div class="card-restaurant__image card-restaurant__image__4" href="page-menu-4.html"></div>
+					<div class="card-restaurant__text-zone">
+						<a class="card-restaurant__text-zone__title" href="page-menu-4.html">Le délice des sens</a>
+						<a class="card-restaurant__text-zone__subtitle" href="page-menu-4.html">Folie-Méricourt</a>
+						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
+						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
 					</div>
 				</li>
 			</ol>
@@ -102,22 +100,18 @@
 
 		<footer>
 			<h1>ohmyfood</h1>
-			<ol class="liste-footer">
-				<li class="listeFooter__element">
-					<span>
-						<i class="fas fa-utensils icone liste-footer__element__icone icone icone--blanc"></i> 
-						<h5>Proposer un restaurant</h5>
-					</span>
+			<ul class="fa-ul list-footer">
+				<li class="list-footer__element">
+					<span class="fa-li"><i class="fas fa-utensils icon list-footer__element__icon icon icon--footer"></i></span>&nbsp;&nbsp;Proposer un restaurant
 				</li>
-				<li class="listeFooter__element">
-					<span>
-						<i class="fas fa-hands-helping liste-footer__element__icone icone icone--blanc"></i> 
-						<h5>Devenir partenaire</h5>
-					</span>
+				<li class="list-footer__element">
+					<span class="fa-li"><i class="fas fa-hands-helping icon list-footer__element__icon icon--footer"></i></span>&nbsp;&nbsp;Devenir partenaire
 				</li>
-				<li class="listeFooter__element"><h5>Mentions légales</h5></li>
-				<li class="listeFooter__element"><h5>Contact</h5></li>
-			</ol>
+			</ul>
+			<ul class="list-footer-2">
+				<li class="list-footer__element"></span><h5>Mentions légales</h5></li>
+				<li class="list-footer__element"><h5>Contact</h5></li>
+			</ul>
 		</footer>
 
 	</body>
