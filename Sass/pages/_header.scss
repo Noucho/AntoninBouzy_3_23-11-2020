@@ -1,0 +1,52 @@
+.header{
+
+  > h1{
+    font-family: $font-family-primary;
+    font-weight: bolder;
+    font-size:2.6em;
+    text-align:center;
+    background-color:white;
+    margin-block-start:0;
+    margin-block-end:0.8em;
+  }
+
+  &__bottom{
+    background-color:$color-background;
+
+    &__localisation{
+      background-color:scale-color(dimgrey, $lightness:+50%);
+      text-align:center;
+      border-top:7px solid dimgrey;
+
+      > p{
+        display:inline-flex;
+        font-size:2.5em;
+        font-family:$font-family-secondary;
+        font-weight:bolder;
+        width:fit-content;
+      }
+
+      &:before{
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
+        margin-right:2%;
+      }
+    }
+
+    > h2{
+      font-family: $font-family-secondary;
+      font-size:2.6em;
+      text-align:center;
+      margin: 5% 15% 0 15%
+    }
+
+    > h4{
+      font-family: $font-family-secondary;
+      font-weight:normal;
+      text-align:center;
+    }
+
+    > button{
+      margin: 5% 22% 15% 22%;
+    }
+  }
+}

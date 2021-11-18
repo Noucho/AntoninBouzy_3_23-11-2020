@@ -1,0 +1,64 @@
+footer {
+
+  background-color: $color-footer-background;
+  padding: 40px;
+
+
+  h1 {
+    font-family: $font-family-primary;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+
+  .list-footer {
+
+    margin-left: 2em;
+    margin-block-end: 0px;
+    list-style:none;
+    position:relative;
+    padding-inline-start:0px;
+
+    &__element {
+
+      color: white;
+      font-family: $font-family-secondary;
+      font-size: 1em;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+
+
+      &--icon--1 {
+        padding-left:8%;
+
+        &:before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f2e7";
+          position: absolute;
+          left:0%;
+          top:1%;
+          font-size:2em;
+        }
+      }
+
+      &--icon--2 {
+        padding-left:8%;
+
+        &:before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f4c4";
+          position: absolute;
+          font-size:2em;
+          left:0%;
+          top:29%
+        }
+      }
+    }
+
+  }
+}

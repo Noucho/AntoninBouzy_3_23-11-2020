@@ -5,7 +5,7 @@
 		<meta charset="utf-8"/>
 		<title>Ohmyfood - Réservez le menu qui vous convient</title>
 		<script src="https://kit.fontawesome.com/a42d901271.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="./styles/page-menu-stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="./public/css/style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,121 +15,122 @@
 
 	<body>
 		
-		<div class="header">
-			<div class="header__top">
-				<a href="index.html"><i class="fas fa-arrow-left iconeHeader-top icone"></i></a>
-				<p class="header__titre">ohmyfood</p>
+		<div class="header-menu">
+			<div class="header-menu__top">
+				<a href="index.html"><i class="fas fa-arrow-left header-menu__top__icon icon"></i></a>
+				<p class="header-menu__top__title">ohmyfood</p>
 			</div>
-			<div class="header__image header__image--1"></div>
+			<div class="header-menu__image header-menu__image--1"></div>
 		</div>
 
 		<div class="menu">
 
 			<div class="menu__top">
-				<p class="menu__top__titre">A la française</p>
-				<i class="far fa-heart menu__top__icone icone"></i>
-				<i class="fas fa-heart menu__top__icone icone"></i>
+				<p class="menu__top__title">La palette du goût</p>
+				<i class="menu__top__icon menu__top__icon__empty far fa-heart icon"></i>
+				<i class="menu__top__icon menu__top__icon__full fas fa-heart icon"></i>
 			</div>
 
 			<div class="entrees">
-				<div class="entrees__titre">Entrées</div> <!--A capitalizer -->
-				<ol class="liste-plats">
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Tartare de poulpe acidulé</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Aux zests d'orange</p><p class="carte-plats__prix">25€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+				<div class="entrees__title">Entrées</div> <!--A capitalizer -->
+				<ol class="list-dishes">
+					<li class="card-dishes">
+						<p class="card-dishes__title">Fricassée d'escargot</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Au piment d'espelette</p><p class="card-dishes__price">25€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Velouté de légumes d'antan</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Carotte, panas, topinambour</p><p class="carte-plats__prix">35€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+					<li class="card-dishes">
+						<p class="card-dishes__title">Foie gras de canard mi-cuit</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Et ses copeaux de truffe noire</p><p class="card-dishes__price">35€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Soupe à l'oignon</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Revisitée</p><p class="carte-plats__prix">20€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+					<li class="card-dishes">
+						<p class="card-dishes__title">Oeuf au plat</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Assaisonné à la truffe sur lit de caviar</p><p class="card-dishes__price">20€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 				</ol>
 			</div>
 
-			<div class="plats">
-				<div class="plats__titre">Plats</div> <!--A capitalizer -->
-				<ol class="liste-plats">
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Coquilles Saint-Jacques</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Accompagnées d'une purée de panais</p><p class="carte-plats__prix">40€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+			<div class="dishes">
+				<div class="dishes__title">plats</div> <!--A capitalizer -->
+				<ol class="list-dishes">
+					<li class="card-dishes">
+						<p class="card-dishes__title">Filet de boeuf aux herbes</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Accompagné de sa ribambelle de légumes</p><p class="card-dishes__price">40€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Magret de canard</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Et parmentier de pommes de terres</p><p class="carte-plats__prix">35€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+					<li class="card-dishes">
+						<p class="card-dishes__title">Parmentier de queue de boeuf</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Et ses copeaux de truffe noire</p><p class="card-dishes__price">35€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Pigeonneau d'Ille-et-Vilaine</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Sur son lit de gnocchis aux légumes</p><p class="carte-plats__prix">44€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+					<li class="card-dishes">
+						<p class="card-dishes__title">Filet de Turbot</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Aux agrumes</p><p class="card-dishes__price">44€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 				</ol>
 			</div>
 
 			<div class="desserts">
-				<div class="desserts__titre">Desserts</div> <!--A capitalizer -->
-				<ol class="liste-plats">
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Pétales de violette glacés</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Et purée de noisettes</p><p class="carte-plats__prix">18€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+				<div class="desserts__title">Desserts  <!--A capitalizer -->
+				</div>
+				<ol class="list-dishes">
+					<li class="card-dishes">
+						<p class="card-dishes__title">Paris-Brest</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Revisité</p><p class="card-dishes__price">18€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Fondant au chocolat</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Revisité</p><p class="carte-plats__prix">22€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+					<li class="card-dishes">
+						<p class="card-dishes__title">Macaron au chocolat d'exception</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Et glace à la vanille de Madagascar</p><p class="card-dishes__price">22€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
-					<li class="carte-plats">
-						<p class="carte-plats__titre">Millefeuille croustillant</p>
-						<span class="carte-plats__bottom"><p class="carte-plats__sous-titre">Myrtilles et pâte d'amande</p><p class="carte-plats__prix">23€</p></span>
-						<div class="carte-plats__zone-icone">
-							<i class="fas fa-check-circle carte-plats__icone-check icone"></i>
+					<li class="card-dishes">
+						<p class="card-dishes__title">Mousse au chocolat</p>
+						<span class="card-dishes__bottom"><p class="card-dishes__subtitle">Au piment d'espelette et à la truffe noire</p><p class="card-dishes__price">23€</p></span>
+						<div class="card-dishes__zone-icon">
+							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 				</ol>
 			</div>
 
-			<button class="bouton bouton--rose">Commander</button>
+			<button class="button button--menu button--highlight">Commander</button>
 		</div>
 
-		<div class="footer">
-			<p class="footer__titre"></p>
-			<ol class="footer__liste">
-				<li class="footer__liste__element"><span><i class="fas fa-utensils footer__liste__element__icone icone"></i> <p class="footer__liste__element__texte">Proposer un restaurant</p></span></li>
-				<li class="footer__liste__element"><span><i class="fas fa-hands-helping footer__liste__element__icone icone"></i> <p class="footer__liste__element__texte">Devenir partenaire</p></span></li>
-				<li class="footer__liste__element"><p class="footer__liste__element__texte">Mentions légales</p></li>
-				<li class="footer__liste__element"><p class="footer__liste__element__texte">Contact</p></li>
-			</ol>
-		</div>
+		<footer>
+			<h1>ohmyfood</h1>
+			<ul class="list-footer">
+				<li class="list-footer__element list-footer__element--icon--1"><h5>Proposer un restaurant</h5></li>
+				<li class="list-footer__element list-footer__element--icon--2"><h5>Devenir partenaire</h5></li>
+				<li class="list-footer__element"><h5>Mentions légales</h5></li>
+				<li class="list-footer__element"><h5>Contact</h5></li>
+			</ul>
+		</footer>
 
 	</body>
 

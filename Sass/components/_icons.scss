@@ -12,10 +12,7 @@
   }
 
   &--functioning{
-    color:$Color__Primary;
+    color:$color-primary;
   }
 
-  &--card{
-    color:linear-gradient($Color__Primary, $Color__Secondary)
-  }
 }

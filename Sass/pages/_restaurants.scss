@@ -1,6 +1,6 @@
 .restaurants{
 
-  background-color:$Color__Background;
+  background-color:$color-background;
 
   margin-top:15px;
   padding-top:30px;
@@ -9,7 +9,7 @@
     margin-block-start:2%;
     margin-block-end:3%;
     height:7%;
-    font-family:$Police__Secondary;
+    font-family:$font-family-secondary;
     padding-inline-start:2%;
     font-size:3.5em
   }
