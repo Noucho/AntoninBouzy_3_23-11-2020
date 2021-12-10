@@ -2,6 +2,10 @@
   padding-inline-start:2%;
   margin:8% 0 13% 0;
 
+  @media only screen and (min-width : 1224px){
+    margin:3% 0 5% 0;
+  }
+
   > h2 {
     font-size: 2.6em;
     font-weight: bolder;
@@ -16,9 +20,9 @@
 .step-functioning{
   background-color:$color-background;
   position:relative;
-  margin:40px 40px 55px 0px;
+  margin:40px 40px 55px 0;
   border-radius:50px;
-  box-shadow: 0px 7px 20px 6px dimgrey;
+  box-shadow: 0 7px 20px 6px dimgrey;
 
   &:active{
     background-color:scale-color($color-primary, $lightness:+50%);
@@ -47,30 +51,34 @@
     position:absolute;
     left:-3%;
     top:15%;
+
+    @media only screen and (min-width : 1224px){
+      left:-1.5%;
+    }
   }
 
   > h3{
     display:inline-flex;
-    padding:15px 0px 15px 15px;
+    padding:15px 0 15px 15px;
     font-size:2.6em;
     font-family:$font-family-secondary;
 
     &:before{
-      margin:0px 70px 0px 70px;
+      margin:0 70px 0 70px;
       color:dimgrey;
     }
   }
 
   &__1 >h3:before{
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3cd";
+    font-family: "Font Awesome 5 Free", serif; font-weight: 900; content: "\f3cd";
   }
 
   &__2 >h3:before{
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0ca";
+    font-family: "Font Awesome 5 Free", serif; font-weight: 900; content: "\f0ca";
   }
 
   &__3 >h3:before{
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f54e";
+    font-family: "Font Awesome 5 Free", serif; font-weight: 900; content: "\f54e";
   }
 }
 

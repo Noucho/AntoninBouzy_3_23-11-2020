@@ -7,11 +7,15 @@
 
   &__title{
     margin-block-start:2%;
-    margin-block-end:3%;
+    margin-block-end:1%;
     height:7%;
     font-family:$font-family-secondary;
     padding-inline-start:2%;
-    font-size:3.5em
+    font-size:3.5em;
+
+    @media only screen and (min-width : 1224px){
+    margin-bottom:2%;
+  }
   }
 
   &__list{

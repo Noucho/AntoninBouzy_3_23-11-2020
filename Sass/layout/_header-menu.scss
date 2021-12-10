@@ -1,45 +1,62 @@
-.header-menu{
-  position:relative;
+.header-menu {
+  position: relative;
 
 
-  &__top{
+  &__top {
 
-    &__icon{
-      position:absolute;
-      top:18px;
-      left:35px;
-      color:black;
+    &__icon {
+      position: absolute;
+      top: 18px;
+      left: 35px;
+      color: black;
     }
 
-    &__title{
+    &__title {
       font-family: $font-family-primary;
-      font-size:2.6em;
-      text-align:center;
+      font-size: 2.6em;
+      text-align: center;
     }
   }
 
-  &__image{
-    height:40vh;
+  &__image {
+    height: 40vh;
+
+    @media only screen and (min-device-width:768px){
+      height:70vh;
+    }
 
 
-    &--1{
+    &--1 {
       background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-      background-position: 60% ;
-      background-size:120%;
-      z-index:1;
-      position:relative;
+      background-position: 60%;
+      background-size: 120%;
+      background-repeat: no-repeat;
+      z-index: 1;
+      position: relative;
     }
 
-    &--2{
+    &--2 {
       background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+      background-position: 60%;
+      background-size: 120%;
+      z-index: 1;
+      position: relative;
     }
 
-    &--3{
+    &--3 {
       background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+      background-position: 60%;
+      background-size: 120%;
+      z-index: 1;
+      position: relative;
     }
 
-    &--4{
+    &--4 {
       background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+      background-position: 60%;
+      background-size: 120%;
+      z-index: 1;
+      position: relative;
     }
   }
 }
