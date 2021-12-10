@@ -119,7 +119,7 @@
 
   &__subtitle{
     font-family:$font-family-secondary;
-    font-size:2.6em;
+    font-size:30px;
     padding:0 20px 0 20px;
     text-overflow:ellipsis;
     overflow:hidden;
@@ -128,7 +128,9 @@
     margin-block-end:0;
     z-index: 1;
 
-
+    @media only screen and (max-device-width:500px) {
+      font-size:40px
+    }
   }
 
   &__price{

@@ -220,7 +220,7 @@ footer .list-footer__element--icon--2:before {
 }
 .card-dishes__subtitle {
   font-family: Roboto;
-  font-size: 2.6em;
+  font-size: 30px;
   padding: 0 20px 0 20px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -228,6 +228,11 @@ footer .list-footer__element--icon--2:before {
   margin-block-start: 0;
   margin-block-end: 0;
   z-index: 1;
+}
+@media only screen and (max-device-width: 500px) {
+  .card-dishes__subtitle {
+    font-size: 40px;
+  }
 }
 .card-dishes__price {
   font-family: Roboto;
