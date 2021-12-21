@@ -1,15 +1,15 @@
 footer {
 
   background-color: $color-footer-background;
-  padding: 40px;
+  padding: 20px;
 
 
   h1 {
     font-family: $font-family-primary;
     color: white;
     font-size: 1em;
-    margin-bottom: 2em;
-    margin-top: 2em;
+    margin-bottom: 8%;
+    margin-top: 4%;
     font-weight: 100;
     letter-spacing: 1px;
   }
@@ -21,6 +21,14 @@ footer {
     position:relative;
     padding-inline-start:0;
 
+    a {
+      text-decoration:none;
+      color:white;
+      font-size: 1em;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+    }
+
     &__element {
 
       color: white;
@@ -30,27 +38,28 @@ footer {
       margin-bottom: 0.6em;
 
 
-      &--icon--1 {
-        padding-left:6%;
 
-        @media only screen and (min-width : 1224px){
+      &--icon--1 {
+        padding-left:10%;
+
+        @media all and (min-width : 1224px){
           padding-left:30px;
         }
 
-        @media only screen and (min-width : 768px) and (max-width:1223px) {
+        @media all and (min-width : 768px) and (max-width:1223px) {
           padding-left:30px;
         }
 
         &:before {
           font-family: "Font Awesome 5 Free", serif;
           font-weight: 900;
-          font-size:2em;
+          font-size:1em;
           content: "\f2e7";
           position: absolute;
           left:0;
           top:1%;
 
-          @media only screen and (min-width : 768px){
+          @media all and (min-width : 768px){
             font-size:1em;
           }
 
@@ -58,9 +67,9 @@ footer {
       }
 
       &--icon--2 {
-        padding-left:6%;
+        padding-left:10%;
 
-        @media only screen and (min-width : 768px){
+        @media all and (min-width : 768px){
           padding-left:30px;
         }
 
@@ -68,13 +77,13 @@ footer {
         &:before {
           font-family: "Font Awesome 5 Free", serif;
           font-weight: 900;
-          font-size:2em;
+          font-size:0.8em;
           content: "\f4c4";
           position: absolute;
           left:0;
           top:29%;
 
-          @media only screen and (min-width : 768px){
+          @media all and (min-width : 768px){
             font-size:1em;
           }
         }

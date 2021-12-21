@@ -1,18 +1,25 @@
 .button{
   font-family:$font-family-secondary;
   font-weight:normal;
-  font-size:2.6em;
+  font-size:1em;
 
-  padding: 40px;
+  padding: 15px;
 
   border-radius:60px;
 
-  box-shadow: 0 7px 20px 6px dimgrey;
+  box-shadow: 0 5px 10px 3px dimgrey;
 
   border-style:none;
 
   &--highlight{
     color:white;
     background: -webkit-gradient(linear, left top, left bottom, from($color-secondary), to($color-primary));
+    transition:all 0.5s;
+
+    &:hover{
+      box-shadow:0 7px 15px 9px dimgrey;
+      background: -webkit-gradient(linear, left top, left bottom, from(lighten($color-secondary,5%)), to(lighten($color-primary, 5%)));
+  }
+
   }
 }

@@ -11,9 +11,12 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 		<!--Insérer ici le lien vers la favicon -->
 		<link rel="shortcut icon" type="image/png" href="#"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 	<body>
+
+		<div class="loader"></div>
 
 		<header class="header">
 			<h1>ohmyfood</h1>
@@ -31,65 +34,67 @@
 			<h2>Fonctionnement</h2>
 			<ol class="functioning__list-steps">
 				<li class="step-functioning step-functioning__1">
-					<p class="step-functioning__bullet">1</p>
+					<div class="step-functioning__bullet">1</div>
 					<h3>Choisissez un restaurant</h3>
 				</li>
 
 				<li class="step-functioning step-functioning__2">
-					<p class="step-functioning__bullet">2</p> 
+					<div class="step-functioning__bullet">2</div> 
 					<h3>Composez votre menu</h3>
 				</li>
 
 				<li class="step-functioning step-functioning__3">
-					<p class="step-functioning__bullet">3</p> 
+					<div class="step-functioning__bullet">3</div> 
 					<h3>Dégustez au restaurant</h3>
 				</li>
 			</ol>
 		</section>
 
 		<section class="restaurants">
-			<h3 class="restaurants__title">Restaurants</h3>
+			<h2 class="restaurants__title">Restaurants</h2>
 			<ol class="restaurants__list">
-					<li class="card-restaurant restaurants__list__1" onclick="location.href='page-menu-1.html';">
-						<div class="card-restaurant__image card-restaurant__image__1"></div>
-						<a class="card-restaurant__thumbail thumbnail-new-restaurant" href="page-menu-1.html">Nouveau</a>
-						<div class="card-restaurant__text-zone">
-							<a class="card-restaurant__text-zone__title" href="page-menu-1.html">La palette du goût</a>
-							<a class="card-restaurant__text-zone__subtitle" href="page-menu-1.html">Ménilmontant</a>
-							<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
-							<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
-						</div>
-					</li> 
-
-				<li class="card-restaurant restaurants__list__2" onclick="location.href='page-menu-2.html';">
-					<div class="card-restaurant__image card-restaurant__image__2"></div>
-					<a class="card-restaurant__thumbail thumbnail-new-restaurant" href="page-menu-2.html">Nouveau</a>
-					<div class="card-restaurant__text-zone">
-						<a class="card-restaurant__text-zone__title" href="page-menu-2.html">La note enchantée</a>
-						<a class="card-restaurant__text-zone__subtitle" href="page-menu-2.html">Charonne</a>
-						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
-						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
+				<li class="card-restaurant restaurants__list__1">
+					<div class="card-restaurant__image card-restaurant__image__1" onclick="location.href='page-menu-2.html';"></div>
+					<h5 class="card-restaurant__thumbail thumbnail-new-restaurant" onclick="location.href='page-menu-2.html';">Nouveau</h5>
+					<div class="card-restaurant__text-zone" onclick="location.href='page-menu-2.html';">
+						<h3 class="card-restaurant__text-zone__title" href="page-menu-1.html">La palette du goût</h3>
+						<h4 class="card-restaurant__text-zone__subtitle" href="page-menu-1.html">Ménilmontant</h4>
 					</div>
+					<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
+					<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
+				</li> 
+
+				<li class="card-restaurant restaurants__list__2" >
+					<div class="card-restaurant__image card-restaurant__image__2" onclick="location.href='page-menu-2.html';"></div>
+					<h5 class="card-restaurant__thumbail thumbnail-new-restaurant" onclick="location.href='page-menu-2.html';">Nouveau</h5>
+					<div class="card-restaurant__text-zone" onclick="location.href='page-menu-2.html';">
+						<h3 class="card-restaurant__text-zone__title" href="page-menu-2.html">La note enchantée</h3>
+						<h4 class="card-restaurant__text-zone__subtitle" href="page-menu-2.html">Charonne</h4>
+					</div>
+					<i class="card-restaurant__text-zone__icon 	card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
+					<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
 				</li>
 
-				<li class="card-restaurant restaurants__list__3" onclick="location.href='page-menu-3.html';">
-					<div class="card-restaurant__image card-restaurant__image__3"></div>
-					<div class="card-restaurant__text-zone">
-						<a class="card-restaurant__text-zone__title" href="page-menu-3.html">A la française</a>
-						<a class="card-restaurant__text-zone__subtitle" href="page-menu-3.html">Moulin Rouge</a>
-						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
-						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon icon--card"></i>
+				<li class="card-restaurant restaurants__list__2" >
+					<div class="card-restaurant__image card-restaurant__image__2" onclick="location.href='page-menu-2.html';"></div>
+					<h5 class="card-restaurant__thumbail thumbnail-new-restaurant" onclick="location.href='page-menu-2.html';">Nouveau</h5>
+					<div class="card-restaurant__text-zone" onclick="location.href='page-menu-2.html';">
+						<h3 class="card-restaurant__text-zone__title" href="page-menu-2.html">A la française</h3>
+						<h4 class="card-restaurant__text-zone__subtitle" href="page-menu-2.html">Moulin Rouge</h4>
 					</div>
+					<i class="card-restaurant__text-zone__icon 	card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
+					<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
 				</li>
 
-				<li class="card-restaurant restaurants__list__4" onclick="location.href='page-menu-4.html';">
-					<div class="card-restaurant__image card-restaurant__image__4"></div>
-					<div class="card-restaurant__text-zone">
-						<a class="card-restaurant__text-zone__title" href="page-menu-4.html">Le délice des sens</a>
-						<a class="card-restaurant__text-zone__subtitle" href="page-menu-4.html">Folie-Méricourt</a>
-						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
-						<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
+				<li class="card-restaurant restaurants__list__2" >
+					<div class="card-restaurant__image card-restaurant__image__2" onclick="location.href='page-menu-2.html';"></div>
+					<h5 class="card-restaurant__thumbail thumbnail-new-restaurant" onclick="location.href='page-menu-2.html';">Nouveau</h5>
+					<div class="card-restaurant__text-zone" onclick="location.href='page-menu-2.html';">
+						<h3 class="card-restaurant__text-zone__title" href="page-menu-2.html">Le Délice des sens</h3>
+						<h4 class="card-restaurant__text-zone__subtitle" href="page-menu-2.html">Folie-Méricourt</h4>
 					</div>
+					<i class="card-restaurant__text-zone__icon 	card-restaurant__text-zone__icon__empty far fa-heart icon"></i>
+					<i class="card-restaurant__text-zone__icon card-restaurant__text-zone__icon__full fas fa-heart icon"></i>
 				</li>
 			</ol>
 		</section>
@@ -97,10 +102,10 @@
 		<footer>
 			<h1>ohmyfood</h1>
 			<ul class="list-footer">
-				<li class="list-footer__element list-footer__element--icon--1"><h5>Proposer un restaurant</h5></li>
-				<li class="list-footer__element list-footer__element--icon--2"><h5>Devenir partenaire</h5></li>
-				<li class="list-footer__element"><h5>Mentions légales</h5></li>
-				<li class="list-footer__element"><h5>Contact</h5></li>
+				<li class="list-footer__element list-footer__element--icon--1"><a href= #>Proposer un restaurant</a></li>
+				<li class="list-footer__element list-footer__element--icon--2"><a href= #>Devenir partenaire</a></li>
+				<li class="list-footer__element"><a href= #>Mentions légales</a></li>
+				<li class="list-footer__element"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
 			</ul>
 		</footer>
 

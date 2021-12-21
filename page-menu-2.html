@@ -11,132 +11,134 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 		<!--Insérer ici le lien vers la favicon -->
 		<link rel="shortcut icon" type="image/png" href="#"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 	<body>
+
+		<div class="loader"></div>
 		
-		<div class="header-menu">
+		<header class="header-menu">
 			<div class="header-menu__top">
 				<a href="index.html"><i class="fas fa-arrow-left header-menu__top__icon icon"></i></a>
-				<p class="header-menu__top__title">ohmyfood</p>
+				<h1 class="header-menu__top__title">ohmyfood</h1>
 			</div>
 			<div class="header-menu__image header-menu__image--2"></div>
-		</div>
+		</header>
 
-		<div class="menu">
+		<section class="menu">
 
-			<div class="menu__top">
-				<p class="menu__top__title">La note enchantée</p>
+			<section class="menu__top">
+				<h2 class="menu__top__title">La note enchantée</h2>
 				<i class="menu__top__icon menu__top__icon__empty far fa-heart icon"></i>
 				<i class="menu__top__icon menu__top__icon__full fas fa-heart icon"></i>
-			</div>
+			</section>
 
-			<div class="entrees">
-				<div class="entrees__title">Entrées</div> <!--A capitalizer -->
+			<article class="entrees">
+				<h3 class="entrees__title">Entrées</h3> <!--A capitalizer -->
 				<ol class="list-dishes">
 					<li class="card-dishes">
-						<p class="card-dishes__title">Ravioles de foie gras</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Accompagnés de leur crème à la truffe</p><p class="card-dishes__price">25€</p></div>
+						<h4 class="card-dishes__title">Ravioles de foie gras</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Accompagnés de leur crème à la truffe</h5><p class="card-dishes__price">25€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
 					<li class="card-dishes">
-						<p class="card-dishes__title">Caviar Osciètre</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Sur blini à la farine de blé noir</p><p class="card-dishes__price">35€</p></div>
+						<h4 class="card-dishes__title">Caviar Osciètre</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Sur blini à la farine de blé noir</h5><p class="card-dishes__price">35€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
 					<li class="card-dishes">
-						<p class="card-dishes__title">Homard et espuma de potiron</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Mariné aux zestes d'orange</p><p class="card-dishes__price">20€</p></div>
+						<h4 class="card-dishes__title">Homard et espuma de potiron</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Mariné aux zestes d'orange</h5><p class="card-dishes__price">20€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
 					<li class="card-dishes">
-						<p class="card-dishes__title">Foie gras de canard cuit entier</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Confiture de figue et pain toasté</p><p class="card-dishes__price">20€</p></div>
+						<h4 class="card-dishes__title">Foie gras de canard cuit entier</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Confiture de figue et pain toasté</h5><p class="card-dishes__price">20€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 				</ol>
-			</div>
+			</article>
 
-			<div class="dishes">
-				<div class="dishes__title">plats</div> <!--A capitalizer -->
+			<article class="dishes">
+				<h3 class="dishes__title">plats</h3> <!--A capitalizer -->
 				<ol class="list-dishes">
 					<li class="card-dishes">
-						<p class="card-dishes__title">Noix de coquilles Saint-Jacques</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Sur lit de purée de céleri-rave</p><p class="card-dishes__price">40€</p></div>
+						<h4 class="card-dishes__title">Noix de coquilles Saint-Jacques</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Sur lit de purée de céleri-rave</h5><p class="card-dishes__price">40€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
 					<li class="card-dishes">
-						<p class="card-dishes__title">Langoustine poêlée</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Purée de patate douce</p><p class="card-dishes__price">35€</p></div>
+						<h4 class="card-dishes__title">Langoustine poêlée</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Purée de patate douce</h5><p class="card-dishes__price">35€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
 					<li class="card-dishes">
-						<p class="card-dishes__title">Mijoté de queue de boeuf</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Et riz sauvage aux zestes de citron</p><p class="card-dishes__price">44€</p></div>
+						<h4 class="card-dishes__title">Mijoté de queue de boeuf</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Et riz sauvage aux zestes de citron</h5><p class="card-dishes__price">44€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 				</ol>
-			</div>
+			</article>
 
-			<div class="desserts">
-				<div class="desserts__title">Desserts  <!--A capitalizer -->
-				</div>
+			<article class="desserts">
+				<h3 class="desserts__title">Desserts  <!--A capitalizer --></h3>
 				<ol class="list-dishes">
 					<li class="card-dishes">
-						<p class="card-dishes__title">Macaron noisette et chocolat</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Glace au caramel brun et sel de Guérande</p><p class="card-dishes__price">18€</p></div>
+						<h4 class="card-dishes__title">Macaron noisette et chocolat</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Glace au caramel brun et sel de Guérande</h5><p class="card-dishes__price">18€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
 					<li class="card-dishes">
-						<p class="card-dishes__title">Baba au rhum revisité</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Avec son coulis de citron</p><p class="card-dishes__price">22€</p></div>
+						<h4 class="card-dishes__title">Baba au rhum revisité</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Avec son coulis de citron</h5><p class="card-dishes__price">22€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 
 					<li class="card-dishes">
-						<p class="card-dishes__title">Tarte au citron meringuée</p>
-						<div class="card-dishes__bottom"><p class="card-dishes__subtitle">Destructurée</p><p class="card-dishes__price">23€</p></div>
+						<h4 class="card-dishes__title">Tarte au citron meringuée</h4>
+						<div class="card-dishes__bottom"><h5 class="card-dishes__subtitle">Destructurée</h5><p class="card-dishes__price">23€</p></div>
 						<div class="card-dishes__zone-icon">
 							<i class="fas fa-check-circle card-dishes__icon-check icon"></i>
 						</div>
 					</li>
 				</ol>
-			</div>
+			</article>
 
 			<button class="button button--menu button--highlight">Commander</button>
-		</div>
+		</section>
 
 		<footer>
 			<h1>ohmyfood</h1>
 			<ul class="list-footer">
-				<li class="list-footer__element list-footer__element--icon--1"><h5>Proposer un restaurant</h5></li>
-				<li class="list-footer__element list-footer__element--icon--2"><h5>Devenir partenaire</h5></li>
-				<li class="list-footer__element"><h5>Mentions légales</h5></li>
-				<li class="list-footer__element"><h5>Contact</h5></li>
+				<li class="list-footer__element list-footer__element--icon--1"><a href= #>Proposer un restaurant</a></li>
+				<li class="list-footer__element list-footer__element--icon--2"><a href= #>Devenir partenaire</a></li>
+				<li class="list-footer__element"><a href= #>Mentions légales</a></li>
+				<li class="list-footer__element"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
 			</ul>
 		</footer>
 

@@ -1,12 +1,14 @@
 @import "./base/body";
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 @import "./components/icons";
 @import "./components/buttons";
 @import "./components/thumbnails";
 @import "./layout/footer";
 @import "./layout/menu-restaurant";
 @import "./layout/header-menu";
+@import "./layout/loader";
 @import "./pages/restaurants";
 @import "./pages/functioning";
 @import "./pages/header";
