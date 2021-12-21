@@ -123,11 +123,11 @@ footer .list-footer {
   list-style: none;
   position: relative;
   padding-inline-start: 0;
-  text-align: center;
 }
 @media all and (min-width: 768px) {
   footer .list-footer {
     margin-block-start: 0;
+    text-align: center;
   }
 }
 footer .list-footer a {
@@ -145,7 +145,7 @@ footer .list-footer__element {
   margin-bottom: 0.6em;
 }
 footer .list-footer__element--icon--1 {
-  padding-left: 10%;
+  padding-left: 30px;
 }
 @media all and (min-width: 768px) {
   footer .list-footer__element--icon--1 {
@@ -168,7 +168,7 @@ footer .list-footer__element--icon--1:before {
   }
 }
 footer .list-footer__element--icon--2 {
-  padding-left: 10%;
+  padding-left: 30px;
 }
 @media all and (min-width: 768px) {
   footer .list-footer__element--icon--2 {
@@ -737,7 +737,7 @@ footer .list-footer__element--icon--2:before {
 .header__bottom > button {
   margin: 5% auto 15% auto;
 }
-@media all and (min-width: 1224px) {
+@media all and (min-width: 768px) {
   .header__bottom > button {
     margin: 2% auto 4% auto;
     font-size: 2em;
