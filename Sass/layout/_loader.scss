@@ -10,8 +10,8 @@
 
   &:after{
     content:"";
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid $color-primary;
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid $color-primary;
     border-radius: 50%;
     width: 7vw;
     height: 7vw;
@@ -22,7 +22,11 @@
     opacity:1;
     overflow:hidden;
 
-
     animation: spin 3s ease-in-out 1 0ms;
+
+    @media all and (min-width:768px){
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid $color-primary;
+    }
   }
 }

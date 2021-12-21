@@ -10,6 +10,10 @@
     font-size: 1.5em;
     font-weight: bolder;
     font-family: $font-family-secondary;
+
+    @media all and (min-width:768px){
+      font-size:2em;
+    }
   }
 
   &__list-steps{
@@ -17,6 +21,10 @@
     margin-block-start:0;
     margin-block-end:0;
     padding-inline-start:5%;
+
+    @media all and (min-width:768px){
+      padding-inline-start:1%
+    }
   }
 }
 
@@ -26,6 +34,10 @@
   margin:10px 10px 20px 0;
   border-radius:25px;
   box-shadow: 0 4px 15px 2px dimgrey;
+
+  @media all and (min-width:768px){
+    margin-bottom:30px;
+  }
 
   &:active{
     background-color:scale-color($color-primary, $lightness:+50%);
@@ -61,6 +73,10 @@
 
     @media all and (min-width : 1224px){
       left:-1.5%;
+      font-size:1.5em;
+      top:30%;
+      width:60px;
+      height:60px;
     }
   }
 
@@ -71,10 +87,17 @@
 
     font-family:$font-family-secondary;
 
+    @media all and (min-width:768px){
+      font-size:2em;
+      padding-left:4%;
+    }
+
     &:before{
       margin:0 25px 0 25px;
       color:dimgrey;
       font-size:1em;
+
+
     }
   }
 

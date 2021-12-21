@@ -108,11 +108,27 @@ footer h1 {
   font-weight: 100;
   letter-spacing: 1px;
 }
+@media all and (min-width: 768px) {
+  footer h1 {
+    font-size: 2em;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
 footer .list-footer {
   margin-block-end: 0;
   list-style: none;
   position: relative;
   padding-inline-start: 0;
+  text-align: center;
+}
+@media all and (min-width: 768px) {
+  footer .list-footer {
+    margin-block-start: 0;
+  }
 }
 footer .list-footer a {
   text-decoration: none;
@@ -131,14 +147,9 @@ footer .list-footer__element {
 footer .list-footer__element--icon--1 {
   padding-left: 10%;
 }
-@media all and (min-width: 1224px) {
+@media all and (min-width: 768px) {
   footer .list-footer__element--icon--1 {
-    padding-left: 30px;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 1223px) {
-  footer .list-footer__element--icon--1 {
-    padding-left: 30px;
+    padding-left: 0;
   }
 }
 footer .list-footer__element--icon--1:before {
@@ -152,7 +163,8 @@ footer .list-footer__element--icon--1:before {
 }
 @media all and (min-width: 768px) {
   footer .list-footer__element--icon--1:before {
-    font-size: 1em;
+    position: inherit;
+    margin-right: 0.5%;
   }
 }
 footer .list-footer__element--icon--2 {
@@ -160,7 +172,7 @@ footer .list-footer__element--icon--2 {
 }
 @media all and (min-width: 768px) {
   footer .list-footer__element--icon--2 {
-    padding-left: 30px;
+    padding-left: 0;
   }
 }
 footer .list-footer__element--icon--2:before {
@@ -174,7 +186,8 @@ footer .list-footer__element--icon--2:before {
 }
 @media all and (min-width: 768px) {
   footer .list-footer__element--icon--2:before {
-    font-size: 1em;
+    position: inherit;
+    margin-right: 0.5%;
   }
 }
 
@@ -187,6 +200,11 @@ footer .list-footer__element--icon--2:before {
   padding-left: 4%;
   padding-right: 4%;
 }
+@media all and (min-width: 768px) {
+  .menu {
+    margin-top: -10%;
+  }
+}
 .menu__top {
   position: relative;
 }
@@ -194,6 +212,13 @@ footer .list-footer__element--icon--2:before {
   padding-top: 8%;
   padding-left: 6%;
   font-family: Shrikhand;
+}
+@media all and (min-width: 768px) {
+  .menu__top__title {
+    padding-top: 4%;
+    padding-left: 0%;
+    font-size: 3em;
+  }
 }
 .menu__top__icon {
   position: absolute;
@@ -218,6 +243,11 @@ footer .list-footer__element--icon--2:before {
   -webkit-text-fill-color: transparent;
   z-index: 1;
 }
+@media all and (min-width: 768px) {
+  .menu__top__icon {
+    font-size: 3em;
+  }
+}
 
 .entrees__title, .dishes__title, .desserts__title {
   text-transform: uppercase;
@@ -236,6 +266,19 @@ footer .list-footer__element--icon--2:before {
   left: 0;
   height: 50%;
   width: 40px;
+}
+@media all and (min-width: 768px) {
+  .entrees__title:after, .dishes__title:after, .desserts__title:after {
+    width: 80px;
+    top: 28px;
+    border-bottom-width: 6px;
+  }
+}
+@media all and (min-width: 768px) {
+  .entrees__title, .dishes__title, .desserts__title {
+    font-size: 2em;
+    margin: 2% 0 4% 0;
+  }
 }
 
 .list-dishes {
@@ -257,6 +300,13 @@ footer .list-footer__element--icon--2:before {
   overflow: hidden;
   animation: fadeIn 0.7s ease-in both, top 0.5s linear;
 }
+@media all and (min-width: 768px) {
+  .card-dishes {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    grid-template-columns: 90% 10%;
+  }
+}
 .card-dishes:nth-of-type(1) {
   animation-delay: 3s;
 }
@@ -265,6 +315,9 @@ footer .list-footer__element--icon--2:before {
 }
 .card-dishes:nth-of-type(3) {
   animation-delay: 3.2s;
+}
+.card-dishes:nth-of-type(4) {
+  animation-delay: 3.3s;
 }
 .card-dishes__title {
   font-family: Roboto;
@@ -275,6 +328,12 @@ footer .list-footer__element--icon--2:before {
   margin-block-end: 0;
   grid-area: 1/1/2/2;
 }
+@media all and (min-width: 768px) {
+  .card-dishes__title {
+    font-size: 1.8em;
+    margin-block-start: 1%;
+  }
+}
 .card-dishes__bottom {
   display: flex;
   grid-area: 2/1/3/2;
@@ -283,6 +342,11 @@ footer .list-footer__element--icon--2:before {
   width: 116%;
   transform-origin: left;
   transition: width 0.5s;
+}
+@media all and (min-width: 768px) {
+  .card-dishes__bottom {
+    width: 110%;
+  }
 }
 .card-dishes__subtitle {
   font-family: Roboto;
@@ -296,6 +360,11 @@ footer .list-footer__element--icon--2:before {
   z-index: 1;
   font-weight: normal;
 }
+@media all and (min-width: 768px) {
+  .card-dishes__subtitle {
+    font-size: 1.5em;
+  }
+}
 .card-dishes__price {
   font-family: Roboto;
   font-size: 1em;
@@ -306,6 +375,11 @@ footer .list-footer__element--icon--2:before {
   margin-right: 30px;
   margin-left: auto;
   padding-left: 30px;
+}
+@media all and (min-width: 768px) {
+  .card-dishes__price {
+    font-size: 2em;
+  }
 }
 .card-dishes__zone-icon {
   background-color: #99E2D0;
@@ -326,6 +400,12 @@ footer .list-footer__element--icon--2:before {
   transition: transform 0.8s;
   margin-left: 50%;
 }
+@media all and (min-width: 768px) {
+  .card-dishes__icon-check {
+    font-size: 3em;
+    margin-left: 30%;
+  }
+}
 .card-dishes:hover > .card-dishes__zone-icon {
   transform: translateX(0%);
   width: 100%;
@@ -341,6 +421,11 @@ footer .list-footer__element--icon--2:before {
   padding: 3%;
   margin: 7% 25% 12% 25%;
   width: 50%;
+}
+@media all and (min-width: 768px) {
+  .button--menu {
+    font-size: 2em;
+  }
 }
 
 .header-menu {
@@ -366,7 +451,7 @@ footer .list-footer__element--icon--2:before {
 }
 @media all and (min-width: 768px) {
   .header-menu__image {
-    height: 70vh;
+    min-height: 70vh;
   }
 }
 .header-menu__image--1 {
@@ -411,9 +496,9 @@ footer .list-footer__element--icon--2:before {
 }
 .loader:after {
   content: "";
-  border: 16px solid #f3f3f3;
+  border: 8px solid #f3f3f3;
   /* Light grey */
-  border-top: 16px solid #9356DC;
+  border-top: 8px solid #9356DC;
   border-radius: 50%;
   width: 7vw;
   height: 7vw;
@@ -424,6 +509,13 @@ footer .list-footer__element--icon--2:before {
   opacity: 1;
   overflow: hidden;
   animation: spin 3s ease-in-out 1 0ms;
+}
+@media all and (min-width: 768px) {
+  .loader:after {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #9356DC;
+  }
 }
 
 .restaurants {
@@ -442,6 +534,8 @@ footer .list-footer__element--icon--2:before {
 @media all and (min-width: 1224px) {
   .restaurants__title {
     margin-bottom: 2%;
+    font-size: 2em;
+    padding-inline-start: 2%;
   }
 }
 .restaurants__list {
@@ -451,6 +545,12 @@ footer .list-footer__element--icon--2:before {
   list-style: none;
   padding-inline-start: 4%;
   margin-block-end: 0;
+}
+@media all and (min-width: 768px) {
+  .restaurants__list {
+    padding-inline-start: 2%;
+    padding-inline-end: 2%;
+  }
 }
 
 .functioning {
@@ -467,11 +567,21 @@ footer .list-footer__element--icon--2:before {
   font-weight: bolder;
   font-family: Roboto;
 }
+@media all and (min-width: 768px) {
+  .functioning > h2 {
+    font-size: 2em;
+  }
+}
 .functioning__list-steps {
   list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 5%;
+}
+@media all and (min-width: 768px) {
+  .functioning__list-steps {
+    padding-inline-start: 1%;
+  }
 }
 
 .step-functioning {
@@ -480,6 +590,11 @@ footer .list-footer__element--icon--2:before {
   margin: 10px 10px 20px 0;
   border-radius: 25px;
   box-shadow: 0 4px 15px 2px dimgrey;
+}
+@media all and (min-width: 768px) {
+  .step-functioning {
+    margin-bottom: 30px;
+  }
 }
 .step-functioning:active {
   background-color: #c9abee;
@@ -510,6 +625,10 @@ footer .list-footer__element--icon--2:before {
 @media all and (min-width: 1224px) {
   .step-functioning__bullet {
     left: -1.5%;
+    font-size: 1.5em;
+    top: 30%;
+    width: 60px;
+    height: 60px;
   }
 }
 .step-functioning > h3 {
@@ -517,6 +636,12 @@ footer .list-footer__element--icon--2:before {
   padding: 15px 0 15px 15px;
   font-size: 1em;
   font-family: Roboto;
+}
+@media all and (min-width: 768px) {
+  .step-functioning > h3 {
+    font-size: 2em;
+    padding-left: 4%;
+  }
 }
 .step-functioning > h3:before {
   margin: 0 25px 0 25px;
@@ -548,6 +673,11 @@ footer .list-footer__element--icon--2:before {
   margin-block-start: 0;
   margin-block-end: 0.4em;
 }
+@media all and (min-width: 768px) {
+  .header > h1 {
+    font-size: 3em;
+  }
+}
 .header__bottom {
   background-color: #e6e6e6;
   text-align: center;
@@ -564,6 +694,11 @@ footer .list-footer__element--icon--2:before {
   font-weight: bolder;
   width: fit-content;
 }
+@media all and (min-width: 768px) {
+  .header__bottom__localisation > p {
+    font-size: 2em;
+  }
+}
 .header__bottom__localisation:before {
   font-family: "Font Awesome 5 Free", serif;
   font-weight: 900;
@@ -573,7 +708,7 @@ footer .list-footer__element--icon--2:before {
 }
 @media all and (min-width: 768px) {
   .header__bottom__localisation:before {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 .header__bottom > h2 {
@@ -581,6 +716,12 @@ footer .list-footer__element--icon--2:before {
   font-size: 1.5em;
   text-align: center;
   margin: 5% 10% 0 10%;
+}
+@media all and (min-width: 768px) {
+  .header__bottom > h2 {
+    font-size: 2.5em;
+    margin-top: 2%;
+  }
 }
 .header__bottom > h4 {
   font-family: Roboto;
@@ -599,6 +740,8 @@ footer .list-footer__element--icon--2:before {
 @media all and (min-width: 1224px) {
   .header__bottom > button {
     margin: 2% auto 4% auto;
+    font-size: 2em;
+    padding: 40px;
   }
 }
 
@@ -659,6 +802,12 @@ footer .list-footer__element--icon--2:before {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+@media all and (min-width: 768px) {
+  .card-restaurant__text-zone__title {
+    font-size: 1.8em;
+    left: 2%;
+  }
+}
 .card-restaurant__text-zone__subtitle {
   text-decoration: none;
   position: absolute;
@@ -671,9 +820,15 @@ footer .list-footer__element--icon--2:before {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+@media all and (min-width: 768px) {
+  .card-restaurant__text-zone__subtitle {
+    font-size: 1.5em;
+    left: 2%;
+  }
+}
 .card-restaurant__text-zone__icon {
   position: absolute;
-  right: 0%;
+  right: 0;
   bottom: 10%;
   font-size: 1.5em;
 }
@@ -694,10 +849,22 @@ footer .list-footer__element--icon--2:before {
   -webkit-text-fill-color: transparent;
   z-index: 3;
 }
+@media all and (min-width: 768px) {
+  .card-restaurant__text-zone__icon {
+    font-size: 3em;
+    right: 2%;
+  }
+}
 .card-restaurant__thumbail {
   position: absolute;
   top: 4%;
   right: 3%;
+}
+@media all and (min-width: 768px) {
+  .card-restaurant__thumbail {
+    font-size: 2em;
+    right: 2%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
