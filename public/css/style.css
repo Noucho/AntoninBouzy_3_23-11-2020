@@ -2,6 +2,9 @@
 body {
   position: relative;
   margin: 0;
+}
+
+.body-loader {
   animation: spin-2 3s ease-in-out 1 0ms;
 }
 
@@ -308,16 +311,16 @@ footer .list-footer__element--icon--2:before {
   }
 }
 .card-dishes:nth-of-type(1) {
-  animation-delay: 3s;
+  animation-delay: 0s;
 }
 .card-dishes:nth-of-type(2) {
-  animation-delay: 3.1s;
+  animation-delay: 0.1s;
 }
 .card-dishes:nth-of-type(3) {
-  animation-delay: 3.2s;
+  animation-delay: 0.2s;
 }
 .card-dishes:nth-of-type(4) {
-  animation-delay: 3.3s;
+  animation-delay: 0.3s;
 }
 .card-dishes__title {
   font-family: Roboto;
